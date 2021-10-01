@@ -44,7 +44,7 @@ weatherForm.addEventListener('submit', (e) => {
     const location = search.value
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
-    const fetchURL = 'http://114.132.238.16:3000/weather?address='
+    const fetchURL = '/weather?address='
                     + encodeURIComponent(location)
     if(!location) {
         return messageOne.textContent = 'Input valid address.'
